@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xu0-1G-1fi">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Filter-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="photofilter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Best-Nature-iPhone-6-Wallpaper.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dv4-pd-XCS">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dv4-pd-XCS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0xE-nw-qjw"/>
+                            <constraint firstAttribute="trailing" secondItem="dv4-pd-XCS" secondAttribute="trailing" id="A70-PQ-XHV"/>
+                            <constraint firstAttribute="bottom" secondItem="dv4-pd-XCS" secondAttribute="bottom" id="g6h-By-Qs9"/>
+                            <constraint firstItem="dv4-pd-XCS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vl4-AA-PnN"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="t9b-ec-z8Z"/>
+                        <barButtonItem title="Apply Filter" id="Sxh-q0-KXR">
+                            <connections>
+                                <action selector="applyFilter:" destination="BYZ-38-t0r" id="Zpv-4M-ffq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="e3a-pr-gkr"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Filter" id="WsS-Uc-nRw"/>
+                    <connections>
+                        <outlet property="photoImageView" destination="dv4-pd-XCS" id="Qwd-bw-tYx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1088" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EqC-05-K9F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="Xu0-1G-1fi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BMM-Pt-IBB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Cpa-ES-UJh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zJr-6x-SX5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5nM-8X-bQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="998"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Best-Nature-iPhone-6-Wallpaper.jpg" width="750" height="1334"/>
+    </resources>
 </document>

@@ -13,6 +13,7 @@
 		11D859C21A1BE42700B4970B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D859C11A1BE42700B4970B /* Images.xcassets */; };
 		11D859C51A1BE42700B4970B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11D859C31A1BE42700B4970B /* LaunchScreen.xib */; };
 		11D859D11A1BE42700B4970B /* photofilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D859D01A1BE42700B4970B /* photofilterTests.swift */; };
+		11D859DD1A1BE70800B4970B /* Best-Nature-iPhone-6-Wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11D859DC1A1BE70800B4970B /* Best-Nature-iPhone-6-Wallpaper.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		11D859CA1A1BE42700B4970B /* photofilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photofilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D859CF1A1BE42700B4970B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D859D01A1BE42700B4970B /* photofilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photofilterTests.swift; sourceTree = "<group>"; };
+		11D859DC1A1BE70800B4970B /* Best-Nature-iPhone-6-Wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Best-Nature-iPhone-6-Wallpaper.jpg"; path = "../../Best-Nature-iPhone-6-Wallpaper.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		11D859B71A1BE42700B4970B /* photofilter */ = {
 			isa = PBXGroup;
 			children = (
+				11D859DC1A1BE70800B4970B /* Best-Nature-iPhone-6-Wallpaper.jpg */,
 				11D859BA1A1BE42700B4970B /* AppDelegate.swift */,
 				11D859BC1A1BE42700B4970B /* ViewController.swift */,
 				11D859BE1A1BE42700B4970B /* Main.storyboard */,
@@ -195,6 +198,7 @@
 				11D859C01A1BE42700B4970B /* Main.storyboard in Resources */,
 				11D859C51A1BE42700B4970B /* LaunchScreen.xib in Resources */,
 				11D859C21A1BE42700B4970B /* Images.xcassets in Resources */,
+				11D859DD1A1BE70800B4970B /* Best-Nature-iPhone-6-Wallpaper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
